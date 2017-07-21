@@ -10,12 +10,14 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { GeocacheComponent } from './geocache/geocache.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    GeocacheComponent
   ],
   imports: [
     BrowserModule,

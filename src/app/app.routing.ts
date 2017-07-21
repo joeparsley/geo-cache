@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { GeocacheComponent } from './geocache/geocache.component';
 
 
 
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'geo',
+    component: GeocacheComponent
   }
 
 ];
