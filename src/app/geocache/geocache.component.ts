@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Geo } from '../geo.model';
+import { Router } from '@angular/router';
+import { GeoService } from '../geo.service';
+
 
 @Component({
   selector: 'app-geocache',
   templateUrl: './geocache.component.html',
-  styleUrls: ['./geocache.component.scss']
+  styleUrls: ['./geocache.component.scss'],
+  providers: [GeoService]
 })
 export class GeocacheComponent implements OnInit {
-  geos: Geo[] = [
-    new Geo("Joe Parsley","Oregon","14817 Glen Oak Rd Oregon City, OR 97045","45.317103","-122.562337")
-  ];
+  geos: Geo[];
 
-  constructor() { }
+
+   constructor(private router: Router, private geoService: GeoService){}
 
   ngOnInit() {
+    this.geos = this.geoService.getGeos();
   }
 
+  goToDetailPage(clickedGeo: Geo) {
+    this.router.navigate(['geos', clickedGeo.id]);
+  };
 }
