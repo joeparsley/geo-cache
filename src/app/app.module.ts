@@ -13,6 +13,17 @@ import { AboutComponent } from './about/about.component';
 import { GeocacheComponent } from './geocache/geocache.component';
 import { GeoDetailComponent } from './geo-detail/geo-detail.component';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +44,9 @@ import { GeoDetailComponent } from './geo-detail/geo-detail.component';
     MdToolbarModule,
     MdIconModule,
     MdGridListModule,
-    MdInputModule
+    MdInputModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

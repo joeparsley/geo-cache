@@ -1,0 +1,26 @@
+{
+  "geos": [ {
+    "username": "Joe Parsley",
+    "state": "Oregon",
+    "address": "14817 Glen Oak Rd Oregon City, OR 97045",
+    "lat": "45.317103",
+    "lng": "-122.562337",
+    "id": "1"
+  },
+  {
+    "username": "Moe Fartsley",
+    "state": "Oregon",
+    "address": "6609 NE Broadway ST, OR 97213",
+    "lat": "75.317103",
+    "lng": "-102.562337",
+    "id": "2"
+  },
+  {
+    "username": "Ham Sweeny",
+    "state": "Oregon",
+    "address": "246 153 ave Portland OR, 97230",
+    "lat": "38.317103",
+    "lng": "-112.562337",
+    "id": "3"
+  }]
+}
