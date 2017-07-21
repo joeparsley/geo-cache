@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GeocacheComponent } from './geocache/geocache.component';
+import { GeoDetailComponent } from './geo-detail/geo-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    GeocacheComponent
+    GeocacheComponent,
+    GeoDetailComponent
   ],
   imports: [
     BrowserModule,
