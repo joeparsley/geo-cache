@@ -2,34 +2,25 @@
   "geos": [ {
     "first": "Joe",
     "last": "Parsley",
-    "address": "14817 Glen Oak Rd",
-    "city": "Oregon City",
     "state": "OR",
-    "postal": "97045",
+    "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
-    "lng": "-122.562337",
-    "id": "1"
+    "lng": "-122.562337"
   },
   {
     "first": "Moe",
     "last": "Fartsley",
-    "address": "14817 Glen Oak Rd",
-    "city": "Oregon City",
     "state": "OR",
-    "postal": "97045",
+    "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
-    "lng": "-122.562337",
-    "id": "2"
+    "lng": "-122.562337"
   },
   {
     "first": "Ham",
-    "last": "Bone",
-    "address": "2245 NE 153rd Ave",
-    "city": "Portland",
+    "last": "Sweeny",
     "state": "OR",
-    "postal": "97234",
+    "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
-    "lng": "-122.562337",
-    "id": "3"
+    "lng": "-122.562337"
   }]
 }

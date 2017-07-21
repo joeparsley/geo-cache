@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Geo } from './geo.model';
-import { GEOS } from './mock-geos';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -19,12 +18,8 @@ export class GeoService {
   this.geos.push(newGeo);
 }
 
-  getGeoById(geoId: number){
-  //  for (var i = 0; i <= GEOS.length - 1; i++) {
-  //    if (GEOS[i].id === geoId) {
-  //      return GEOS[i];
-  //    }
-  //  }
+  getGeoById(geoId: string){
+    return this.database.object('geos/' + geoId);
  }
 
 }

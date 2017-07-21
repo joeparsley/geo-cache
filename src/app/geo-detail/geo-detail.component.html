@@ -1,11 +1,11 @@
 <md-card class="card">
   <md-card-header>
-    <md-card-title>{{geoToDisplay.first}} {{geoToDisplay.last}}</md-card-title>
-    <md-card-subtitle>Located in {{geoToDisplay.state}}</md-card-subtitle>
+    <md-card-title>{{(geoToDisplay | async)?.first}} {{(geoToDisplay | async)?.last}}</md-card-title>
+    <md-card-subtitle>Located in {{(geoToDisplay | async)?.state}}</md-card-subtitle>
   </md-card-header>
   <md-card-content>
-    <h4>Address: {{geoToDisplay.address}} {{geoToDisplay.city}} {{geoToDisplay.state}} {{geoToDisplay.postal}}</h4>
-    <h4>Latitude and Longitude: {{geoToDisplay.lat}},{{geoToDisplay.lng}}</h4>
+    <h4>Address: {{(geoToDisplay | async)?.address}}</h4>
+    <h4>Latitude and Longitude: {{(geoToDisplay | async)?.lat}},{{(geoToDisplay | async)?.lng}}</h4>
   </md-card-content>
   <md-card-actions>
     <button md-button (click)="goToDetailPage(geo)">See More Details!</button>

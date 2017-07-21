@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class GeocacheComponent implements OnInit {
   geos: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
    constructor(private router: Router, private geoService: GeoService){}
 
@@ -20,7 +21,7 @@ export class GeocacheComponent implements OnInit {
     this.geos = this.geoService.getGeos();
   }
 
-  goToDetailPage(clickedGeo: Geo) {
-    // this.router.navigate(['geos', clickedGeo.id]);
+  goToDetailPage(clickedGeo) {
+    this.router.navigate(['geos', clickedGeo.$key]);
   };
 }
