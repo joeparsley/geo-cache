@@ -4,36 +4,34 @@
     <div class="geo-add">
       <form class="form">
 
-        <table class="form-full-width-width" cellspacing="0"><tr>
-          <td><md-input-container class="form-full-width">
-            <input mdInput placeholder="First name">
-          </md-input-container></td>
-          <td><md-input-container class="form-full-width">
-            <input mdInput placeholder="Last Name">
-          </md-input-container></td>
-        </tr></table>
+        <table class="form-full-width" cellspacing="0"><tr>
+        <td><md-input-container class="form-full-width">
+          <input mdInput placeholder="First name" #newFirst>
+        </md-input-container></td>
+        <td><md-input-container class="form-full-width">
+          <input mdInput placeholder="Last Name" #newLast>
+        </md-input-container></td>
+      </tr></table>
 
         <p>
           <md-input-container class="form-full-width">
-            <textarea mdInput placeholder="Address"></textarea>
-          </md-input-container>
-          <md-input-container class="form-full-width">
-            <textarea mdInput placeholder="Address 2"></textarea>
+            <textarea mdInput placeholder="Address" #newAddress></textarea>
           </md-input-container>
         </p>
 
         <table class="form-full-width-width" cellspacing="0"><tr>
           <td><md-input-container class="form-full-width">
-            <input mdInput placeholder="City">
+            <input mdInput placeholder="City" #newCity>
           </md-input-container></td>
           <td><md-input-container class="form-full-width">
-            <input mdInput placeholder="State">
+            <input mdInput placeholder="State" #newState>
           </md-input-container></td>
           <td><md-input-container class="form-full-width">
-            <input mdInput #postalCode maxlength="5" placeholder="Postal Code" value="">
+            <input mdInput #postalCode maxlength="5" placeholder="Postal Code" value="" #newPostal>
             <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
           </md-input-container></td>
         </tr></table>
+        <button md-raised-button (click)="submitForm(newFirst.value, newLast.value, newAddress.value, newCity.value, newState.value, newPostal.value); newFirst.value=''; newLast.value=''; newAddress.value=''; newCity.value=''; newState.value=''; newPostal.value='';">Add</button>
       </form>
     </div>
   </md-grid-tile>

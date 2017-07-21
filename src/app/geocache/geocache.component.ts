@@ -21,6 +21,6 @@ export class GeocacheComponent implements OnInit {
   }
 
   goToDetailPage(clickedGeo: Geo) {
-    this.router.navigate(['geos', clickedGeo.id]);
+    // this.router.navigate(['geos', clickedGeo.id]);
   };
 }

@@ -1,26 +1,35 @@
 {
   "geos": [ {
-    "username": "Joe Parsley",
-    "state": "Oregon",
-    "address": "14817 Glen Oak Rd Oregon City, OR 97045",
+    "first": "Joe",
+    "last": "Parsley",
+    "address": "14817 Glen Oak Rd",
+    "city": "Oregon City",
+    "state": "OR",
+    "postal": "97045",
     "lat": "45.317103",
     "lng": "-122.562337",
     "id": "1"
   },
   {
-    "username": "Moe Fartsley",
-    "state": "Oregon",
-    "address": "6609 NE Broadway ST, OR 97213",
-    "lat": "75.317103",
-    "lng": "-102.562337",
+    "first": "Moe",
+    "last": "Fartsley",
+    "address": "14817 Glen Oak Rd",
+    "city": "Oregon City",
+    "state": "OR",
+    "postal": "97045",
+    "lat": "45.317103",
+    "lng": "-122.562337",
     "id": "2"
   },
   {
-    "username": "Ham Sweeny",
-    "state": "Oregon",
-    "address": "246 153 ave Portland OR, 97230",
-    "lat": "38.317103",
-    "lng": "-112.562337",
+    "first": "Ham",
+    "last": "Bone",
+    "address": "2245 NE 153rd Ave",
+    "city": "Portland",
+    "state": "OR",
+    "postal": "97234",
+    "lat": "45.317103",
+    "lng": "-122.562337",
     "id": "3"
   }]
 }

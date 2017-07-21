@@ -2,7 +2,7 @@
 
 <md-card class="card" *ngFor='let geo of geos | async'>
   <md-card-header>
-    <md-card-title>{{geo.username}}</md-card-title>
+    <md-card-title>{{geo.first}} {{geo.last}}</md-card-title>
     <md-card-subtitle>Located in {{geo.state}}</md-card-subtitle>
   </md-card-header>
   <md-card-actions>

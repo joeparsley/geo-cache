@@ -15,12 +15,16 @@ export class GeoService {
     return this.geos;
   }
 
+  addGeo(newGeo: Geo) {
+  this.geos.push(newGeo);
+}
+
   getGeoById(geoId: number){
-   for (var i = 0; i <= GEOS.length - 1; i++) {
-     if (GEOS[i].id === geoId) {
-       return GEOS[i];
-     }
-   }
+  //  for (var i = 0; i <= GEOS.length - 1; i++) {
+  //    if (GEOS[i].id === geoId) {
+  //      return GEOS[i];
+  //    }
+  //  }
  }
 
 }

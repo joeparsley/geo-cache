@@ -13,7 +13,7 @@ import { GeoService } from '../geo.service';
 })
 export class GeoDetailComponent implements OnInit {
   geoId: number;
-  geoToDisplay: Geo;
+  geoToDisplay;
 
  constructor(private route: ActivatedRoute, private location: Location, private geoService: GeoService) {}
 
