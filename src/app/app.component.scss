@@ -1,0 +1,44 @@
+$titleFont: 'Anton', sans-serif;
+
+
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+md-toolbar {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  font-size: 30px;
+  font-family: $titleFont;
+}
+#logo:hover {
+  cursor: pointer;
+}
+
+#navMenu {
+  font-size: 20px;
+  width: 125px;
+  font-family:  $titleFont;
+}
+
+.copyRight {
+  font-size: 16px;
+  font-family:  $titleFont;
+}
+
+md-icon {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+footer {
+  font-family:  $titleFont;
+}
