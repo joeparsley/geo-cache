@@ -1,3 +1,3 @@
 export class Geo {
-  constructor (public first: string, public last: string, public state: string, public address: string, public lat: string, public lng: string) { }
+  constructor (public first: string, public last: string, public address: string, public lat: string, public lng: string) { }
 }

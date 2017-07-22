@@ -1,7 +1,6 @@
 <md-card class="card">
   <md-card-header>
     <md-card-title>{{(geoToDisplay | async)?.first}} {{(geoToDisplay | async)?.last}}</md-card-title>
-    <md-card-subtitle>Located in {{(geoToDisplay | async)?.state}}</md-card-subtitle>
   </md-card-header>
   <md-card-content>
     <h4>Address: {{(geoToDisplay | async)?.address}}</h4>

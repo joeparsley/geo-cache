@@ -1,66 +1,45 @@
-<h1>Add your Geocache Below!</h1>
+<h1>Add a Cache!</h1>
 <md-grid-list cols="1" rowHeight='750px;'>
   <md-grid-tile>
-    <div class="geo-add">
-      <form class="form" #formData="ngForm" (ngSubmit)="addGeoCache(formData); false">
+    <form #formData="ngForm" (ngSubmit)="addGeoCache(formData); false">
+      <label for="name">Name:</label>
+      <input type="text" name="first" placeholder="first" ngModel>
+      <input type="text" name="last" placeholder="last" ngModel>
 
-        <table class="form-full-width" cellspacing="0"><tr>
-        <td><md-input-container class="form-full-width">
-          <input mdInput name="first" placeholder="First name" ngModle>
-        </md-input-container></td>
-        <td><md-input-container class="form-full-width">
-          <input mdInput name="last" placeholder="Last Name" ngModle >
-        </md-input-container></td>
-        </tr></table>
+      <label for="toggle">Location type:</label>
+      <input type="radio" name="toggle" value="latlng" (click)="toggleDisplay('latlong')" checked ngModel> Lat-Long
+      <input type="radio" name="toggle" value="address" (click)="toggleDisplay('address')" ngModel> Address
 
-        <md-radio-group>
-          <md-checkbox>
-            Location Input:
-          </md-checkbox>
-          <md-radio-button name="toggle" value="latlng" (click)="toggleDisplay('latlong')" checked ngModle >Latitude and Longitude</md-radio-button>
-          <md-radio-button name="toggle" value="address" (click)="toggleDisplay('address')" ngModle >Street address</md-radio-button>
-        </md-radio-group>
+      <div *ngIf="toggle === 'latlong'">
+        <label for="lat">Latitude: </label>
+        <input type="text" name="lat" ngModel>
+
+        <label for="long">Longitutde: </label>
+        <input type="text" name="lng" ngModel>
+      </div>
 
 
-        <div  *ngIf="toggle === 'latlong'">
-          <table class="form-full-width-width" cellspacing="0"><tr>
-            <td><md-input-container class="form-full-width">
-              <input mdInput name="lat" placeholder="Latitude" ngModle >
-            </md-input-container></td>
-            <td><md-input-container class="form-full-width">
-              <input mdInput name="lng" placeholder="Longitude" ngModle >
-            </md-input-container></td>
-            </tr>
-          </table>
-        </div>
+      <div *ngIf="toggle === 'address'">
+        <label for="streetNumber">Street Number: </label>
+        <input type="text" name="streetNumber" ngModel>
 
-        <div *ngIf="toggle === 'address'">
-          <table class="form-full-width" cellspacing="0">
-            <tr>
-              <td><md-input-container class="form-full-width">
-                <input mdInput name="streetNumber" placeholder="Street number" ngModle>
-              </md-input-container></td>
-              <td><md-input-container class="form-full-width">
-                <input mdInput name="street" placeholder="Street" ngModle>
-              </md-input-container></td>
-              <td><md-input-container class="form-full-width">
-                <input mdInput name="city" placeholder="City" ngModle>
-              </md-input-container></td>
-              <td><md-input-container class="form-full-width">
-                <input mdInput name="state" placeholder="State" ngModle>
-              </md-input-container></td>
-              <td><md-input-container class="form-full-width">
-                <input mdInput name="postal" #postalCode maxlength="5" placeholder="Postal Code" value="" ngModle>
-                <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
-              </md-input-container></td>
-            </tr>
-          </table>
-        </div>
-          <md-input-container class="form-full-width">
-            <input mdInput name="state" placeholder="State" #newState ngModle>
-          </md-input-container>
-          <button md-raised-button type="submit">Submit</button>
-      </form>
-    </div>
+        <label for="street">Street: </label>
+        <input type="text" name="street" ngModel>
+
+        <label for="city">City: </label>
+        <input type="text" name="city" ngModel>
+
+        <label for="state">State: </label>
+        <input type="text" name="state" ngModel>
+
+        <label for="zipCode">Zip Code: </label>
+        <input type="text" name="postal" ngModel>
+      </div>
+
+
+      <button type="submit">Submit</button>
+    </form>
+
+
   </md-grid-tile>
 </md-grid-list>

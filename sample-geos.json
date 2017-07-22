@@ -2,7 +2,6 @@
   "geos": [ {
     "first": "Joe",
     "last": "Parsley",
-    "state": "OR",
     "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
     "lng": "-122.562337"
@@ -10,7 +9,6 @@
   {
     "first": "Moe",
     "last": "Fartsley",
-    "state": "OR",
     "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
     "lng": "-122.562337"
@@ -18,7 +16,6 @@
   {
     "first": "Ham",
     "last": "Sweeny",
-    "state": "OR",
     "address": "14817 Glen Oak Rd",
     "lat": "45.317103",
     "lng": "-122.562337"
