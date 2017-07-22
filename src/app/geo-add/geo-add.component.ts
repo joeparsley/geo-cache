@@ -7,7 +7,8 @@ import { ApiService } from '../api.service';
 @Component({
   selector: 'app-geo-add',
   templateUrl: './geo-add.component.html',
-  styleUrls: ['./geo-add.component.scss']
+  styleUrls: ['./geo-add.component.scss'],
+  providers: [GeoService, ApiService]
 })
 export class GeoAddComponent implements OnInit {
   toggle: string;

@@ -16,7 +16,7 @@ export class GeoService {
 
   addGeo(newGeo: Geo) {
   this.geos.push(newGeo);
-}
+  }
 
   getGeoById(geoId: string){
     return this.database.object('geos/' + geoId);
