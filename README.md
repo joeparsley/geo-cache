@@ -39,7 +39,6 @@
 
   `$ npm install`
 
-  `$ bower install`
 
   This will download the project's dependencies
 
